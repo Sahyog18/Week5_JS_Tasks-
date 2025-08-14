@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hide and Show Paragraph</title>
+</head>
+<body>
+
+    <p id="myParagraph">This is a paragraph that can be hidden or shown.</p>
+    <button onclick="toggleParagraph()">Hide/Show</button>
+
+    <script>
+        function toggleParagraph() {
+            let para = document.getElementById("myParagraph");
+            if (para.style.display === "none") {
+                para.style.display = "block"; // Show
+            } else {
+                para.style.display = "none"; // Hide
+            }
+        }
+    </script>
+
+</body>
+</html>
